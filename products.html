@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Platform — ElaraRise Technologies</title>
+  <meta name="description" content="ElaraRise platform: Vision AI on NVIDIA Jetson edge devices, WhatsApp Commerce for customer-facing ordering, and a 22-vertical expansion architecture on Azure cloud." />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="canonical" href="https://www.elararise.in/products.html" />
+
+  <link rel="icon" href="/favicon.ico" sizes="any" />
+  <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png" />
+  <meta name="theme-color" content="#F3EDE1" />
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Primary">
+    <a href="index.html" class="logo" aria-label="ElaraRise home">
+      <svg class="logo-symbol" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M 28 82 A 32 32 0 0 1 92 82 Z" fill="#B8742A"/>
+        <line x1="14" y1="88" x2="106" y2="88" stroke="#14120E" stroke-width="3" stroke-linecap="square"/>
+      </svg>
+      <span class="logo-text">Elara<span class="logo-mark">Rise</span></span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="products.html" class="active">Platform</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <a href="contact.html" class="nav-cta">Request a demo</a>
+  </nav>
+</header>
+
+<main>
+
+  <section class="hero container">
+    <span class="eyebrow">The Platform</span>
+    <h1>
+      Edge intelligence.<br />
+      Commerce in the hand.<br />
+      <span class="emph">Twenty-two verticals, one device.</span>
+    </h1>
+    <p class="lead">
+      ElaraRise is a platform, not a product. A single architecture serves
+      Vision AI at the site, WhatsApp-first commerce for customers, and a
+      reserved expansion lane for every vertical our operators will ask for
+      next.
+    </p>
+  </section>
+
+  <!-- PRODUCT 1: VISION AI -->
+  <section class="section container">
+    <div class="product-block">
+      <div class="product-head">
+        <span class="mono">Product 01</span>
+        <h3>Vision AI</h3>
+        <p style="font-family: var(--serif); font-size: 1.15rem; font-weight: 300; color: var(--ink-mute); line-height: 1.5;">
+          Cameras become intelligence. Intelligence becomes action.
+        </p>
+      </div>
+
+      <div class="product-body">
+        <p>
+          Every Vision AI deployment consists of an NVIDIA Jetson Orin Nano edge
+          device installed at the customer site, connected to existing IP camera
+          infrastructure. Models trained on Azure AI Foundry run locally on the
+          device, producing alerts, grading events, counts, and incident records
+          in under fifty milliseconds &mdash; without sending raw video to the cloud.
+        </p>
+        <p>
+          When an event of interest is detected, the device publishes a
+          structured payload to Azure IoT Hub. Our cloud tier enriches the
+          event, notifies the correct operator via the Owner App, and writes
+          to an immutable audit trail. Sensitive frames are blurred for
+          operational review; unblurred evidence is sealed in a separate
+          container, released only under authorised investigation workflows.
+        </p>
+
+        <ul>
+          <li>
+            <span>Edge device</span>
+            <span>NVIDIA Jetson Orin Nano, 8GB, installed per site</span>
+          </li>
+          <li>
+            <span>Inference latency</span>
+            <span>Approx. 50ms on-device, using ONNX Runtime</span>
+          </li>
+          <li>
+            <span>Camera compatibility</span>
+            <span>Standard Hikvision and Dahua IP cameras via RTSP / GigE</span>
+          </li>
+          <li>
+            <span>Cloud backbone</span>
+            <span>Azure IoT Hub, Functions, SQL, Service Bus, Blob Storage</span>
+          </li>
+          <li>
+            <span>Alert delivery</span>
+            <span>Owner Mobile App (iOS &amp; Android), WhatsApp Business API</span>
+          </li>
+          <li>
+            <span>Privacy design</span>
+            <span>Dual-container evidence isolation, encrypted at rest, retention controls</span>
+          </li>
+          <li>
+            <span>Provisioning</span>
+            <span>Zero-touch, plug-and-play via Azure IoT Hub DPS and X.509 certificates</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PRODUCT 2: WHATSAPP COMMERCE -->
+    <div class="product-block">
+      <div class="product-head">
+        <span class="mono">Product 02</span>
+        <h3>WhatsApp Commerce</h3>
+        <p style="font-family: var(--serif); font-size: 1.15rem; font-weight: 300; color: var(--ink-mute); line-height: 1.5;">
+          Ordering where the customer already is.
+        </p>
+      </div>
+
+      <div class="product-body">
+        <p>
+          In the markets ElaraRise serves, WhatsApp is not an additional
+          channel &mdash; it is the primary channel. Our commerce layer embeds
+          the entire ordering and receipt flow inside the conversation the
+          customer already has with the operator. No new application to
+          download. No sign-up friction. No change in customer behaviour.
+        </p>
+        <p>
+          Orders are captured through natural message exchange and structured
+          catalogue responses, confirmed via M-Pesa or TIGO PESA through our
+          Pesapal integration, and returned as a fiscal-ready receipt. The
+          operator&rsquo;s Owner App reconciles every transaction against site
+          activity captured by the Vision AI tier &mdash; closing the loop
+          between what was ordered, what was prepared, and what was collected.
+        </p>
+
+        <ul>
+          <li>
+            <span>Channel</span>
+            <span>WhatsApp Business API &middot; Meta Cloud API</span>
+          </li>
+          <li>
+            <span>Subscription payments</span>
+            <span>Pesapal &mdash; single integration covering M-Pesa and TIGO PESA</span>
+          </li>
+          <li>
+            <span>Tanzania collections</span>
+            <span>DSM IOT &amp; ICT Company Limited settles weekly to India</span>
+          </li>
+          <li>
+            <span>Receipt architecture</span>
+            <span>TRA VFD fiscal receipt columns reserved for Tanzania regulatory activation</span>
+          </li>
+          <li>
+            <span>Reconciliation</span>
+            <span>Bi-directional with Vision AI event log &mdash; orders cross-check against site activity</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- PRODUCT 3: VERTICAL PLATFORMS -->
+    <div class="product-block">
+      <div class="product-head">
+        <span class="mono">Product 03</span>
+        <h3>Vertical Intelligence</h3>
+        <p style="font-family: var(--serif); font-size: 1.15rem; font-weight: 300; color: var(--ink-mute); line-height: 1.5;">
+          A foundation wide enough for every industry we will serve.
+        </p>
+      </div>
+
+      <div class="product-body">
+        <p>
+          ElaraRise is architected to host twenty-two vertical applications on
+          the same platform &mdash; each one inheriting a shared foundation of
+          identity, catalogue, transaction, and credit-ledger primitives, and
+          adding only the intelligence that is specific to its operating domain.
+        </p>
+        <p>
+          Vertical-specific AI outputs &mdash; freshness grades for seafood,
+          volumetric measurements for agriculture, spectral analysis for
+          mining, attendance and zone integrity for workforce operations
+          &mdash; are captured in a single, schema-flexible output layer.
+          Adding a new vertical is a software configuration; never a platform
+          rebuild.
+        </p>
+
+        <div class="verticals">
+          <span class="vertical-tag">Quick-Service Restaurants</span>
+          <span class="vertical-tag">Warehouse</span>
+          <span class="vertical-tag">Workforce</span>
+          <span class="vertical-tag">Parking</span>
+          <span class="vertical-tag">Hotel &amp; Hospitality</span>
+          <span class="vertical-tag">Retail</span>
+          <span class="vertical-tag">Construction</span>
+          <span class="vertical-tag">Utilities</span>
+          <span class="vertical-tag">Manufacturing</span>
+          <span class="vertical-tag">Agriculture</span>
+          <span class="vertical-tag">Banking</span>
+          <span class="vertical-tag">Seafood</span>
+          <span class="vertical-tag">Fuel Station</span>
+          <span class="vertical-tag">Sports</span>
+          <span class="vertical-tag">Exam Integrity</span>
+          <span class="vertical-tag">Mining</span>
+          <span class="vertical-tag">Airport</span>
+          <span class="vertical-tag">Smart City</span>
+          <span class="vertical-tag">Ports</span>
+          <span class="vertical-tag">Government</span>
+          <span class="vertical-tag">Airport Lounge</span>
+          <span class="vertical-tag">Education</span>
+        </div>
+
+        <p style="font-size: 0.9rem; color: var(--ink-mute); margin-top: 2rem;">
+          Verticals are activated progressively. Each activation follows a
+          structured commercial sequence and never compromises the shared
+          foundation.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ARCHITECTURE -->
+  <section class="markets">
+    <div class="container">
+      <div class="markets-grid">
+        <div>
+          <span class="eyebrow">Architecture</span>
+          <h2>Four layers. Clear boundaries. Open at every seam.</h2>
+          <p class="lead" style="color: rgba(243, 237, 225, 0.78); margin-top: 2rem;">
+            We structure the platform as four explicit layers. Each has a single
+            responsibility, and each is swappable without touching the others.
+          </p>
+        </div>
+
+        <ul class="markets-list">
+          <li>
+            <span class="idx">L1</span>
+            <span class="country">Edge &mdash; Jetson, ONNX, camera pipeline</span>
+            <span class="status active">Active</span>
+          </li>
+          <li>
+            <span class="idx">L2</span>
+            <span class="country">Cloud Infrastructure &mdash; Azure IoT, Functions, SQL</span>
+            <span class="status active">Active</span>
+          </li>
+          <li>
+            <span class="idx">L3</span>
+            <span class="country">Application Framework &mdash; ABP Commercial, .NET 8</span>
+            <span class="status active">Active</span>
+          </li>
+          <li>
+            <span class="idx">L4</span>
+            <span class="country">AI &amp; Analytics &mdash; model-abstracted, interface-first</span>
+            <span class="status active">Active</span>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECURITY & COMPLIANCE -->
+  <section class="section container">
+    <div class="section-head">
+      <span class="eyebrow">Security &amp; Privacy</span>
+      <h2>Operator data is operator data. We protect it accordingly.</h2>
+    </div>
+
+    <div class="approach-list">
+      <div class="approach-item">
+        <span class="num">S1</span>
+        <h3>Edge-first privacy.</h3>
+        <p>
+          The vast majority of video data never leaves the site. Only structured
+          events, and &mdash; when required for evidence &mdash; specific frames
+          are transmitted to the cloud. Raw continuous video streams are not
+          part of our architecture.
+        </p>
+      </div>
+
+      <div class="approach-item">
+        <span class="num">S2</span>
+        <h3>Encryption everywhere.</h3>
+        <p>
+          All data in transit is encrypted with TLS. All data at rest is
+          encrypted using managed keys stored in Azure Key Vault. Every
+          credential in the platform is secret-managed &mdash; no secrets appear
+          in source code or configuration files.
+        </p>
+      </div>
+
+      <div class="approach-item">
+        <span class="num">S3</span>
+        <h3>Audit-grade AI.</h3>
+        <p>
+          Every AI-generated output is logged to an insert-only audit table &mdash;
+          model, version, prompt template, tokens consumed, duration.
+          Every incident report has a permanent, immutable provenance record.
+          We retain this for seven years.
+        </p>
+      </div>
+
+      <div class="approach-item">
+        <span class="num">S4</span>
+        <h3>Tenant isolation by design.</h3>
+        <p>
+          The platform is built on a multi-tenant foundation with row-level
+          isolation enforced at the application layer. One operator cannot
+          see another operator&rsquo;s data under any circumstance.
+        </p>
+      </div>
+
+      <div class="approach-item">
+        <span class="num">S5</span>
+        <h3>Regulatory readiness.</h3>
+        <p>
+          Architecture is designed for Tanzania Revenue Authority (TRA) VFD
+          fiscal receipt integration and for India&rsquo;s Digital Personal Data
+          Protection Act 2023. Both integrations are architecturally
+          provisioned and activated per-tenant as operational readiness demands.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-banner">
+    <div class="container">
+      <h2>Want to see the <em>platform</em> in action?</h2>
+      <p>
+        Demos are scheduled with a member of the founding team. Tell us about
+        your operation and we will tailor the walkthrough to your scale and
+        vertical.
+      </p>
+      <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        <a href="contact.html" class="btn btn-primary">Request a demo <span class="arr">&rarr;</span></a>
+        <a href="about.html" class="btn btn-secondary">About the company <span class="arr">&rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="logo" aria-label="ElaraRise home">
+          <svg class="logo-symbol" viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <path d="M 28 82 A 32 32 0 0 1 92 82 Z" fill="#B8742A"/>
+            <line x1="14" y1="88" x2="106" y2="88" stroke="#14120E" stroke-width="3" stroke-linecap="square"/>
+          </svg>
+          <span class="logo-text">Elara<span class="logo-mark">Rise</span></span>
+        </a>
+        <p class="mt-s">
+          Edge Vision AI and commerce intelligence platforms for operators in
+          growing economies.
+        </p>
+      </div>
+
+      <div class="footer-col">
+        <h4>Company</h4>
+        <ul>
+          <li><a href="about.html">About</a></li>
+          <li><a href="products.html">Platform</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="privacy.html">Privacy Policy</a></li>
+          <li><a href="terms.html">Terms of Service</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h4>Reach us</h4>
+        <ul>
+          <li><a href="mailto:hello@elararise.in">hello@elararise.in</a></li>
+          <li><a href="mailto:partnerships@elararise.in">partnerships@elararise.in</a></li>
+          <li><a href="contact.html">Offices</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer-legal">
+      <p class="footer-legal-text">
+        &copy; 2026 <strong>ElaraRise Technologies Private Limited</strong>. All rights reserved.<br />
+        CIN: U62013AP2026PTC123610 &middot; Startup India DIPP248096 &middot; Registered in India &middot; Nellore, Andhra Pradesh.<br />
+        East Africa operations conducted through <strong>DSM IOT &amp; ICT Company Limited</strong>, BRELA 190321487, Dar es Salaam, Tanzania.
+      </p>
+      <div class="footer-legal-links">
+        <a href="privacy.html">Privacy</a>
+        <a href="terms.html">Terms</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

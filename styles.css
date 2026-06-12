@@ -1351,3 +1351,119 @@ em, .italic {
   background: var(--accent);
   color: var(--bg);
 }
+/* ==================================================
+   PREMIUM ANIMATIONS
+   ================================================== */
+
+#particles-js{
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:-1;
+}
+
+/* Floating Cards */
+
+.capability,
+.approach-item,
+.fact,
+.office,
+.person{
+
+  transition:
+  transform .4s ease,
+  box-shadow .4s ease;
+
+}
+
+.capability:hover,
+.approach-item:hover,
+.fact:hover,
+.office:hover,
+.person:hover{
+
+  transform:translateY(-8px);
+
+  box-shadow:
+  0 20px 40px rgba(0,0,0,.08);
+
+}
+
+/* Premium Buttons */
+
+.btn{
+
+  transition:
+  transform .3s ease,
+  box-shadow .3s ease;
+
+}
+
+.btn:hover{
+
+  transform:
+  translateY(-4px);
+
+  box-shadow:
+  0 10px 25px rgba(184,116,42,.25);
+
+}
+
+/* Animated Logo */
+
+.logo-symbol{
+
+  transition:
+  transform .8s ease;
+
+}
+
+.logo:hover .logo-symbol{
+
+  transform:rotate(20deg);
+
+}
+
+/* Navigation Glow */
+
+.nav-links a:hover{
+
+  color:var(--accent);
+
+}
+
+/* Hero floating effect */
+
+.hero{
+
+  animation:
+  heroFloat 8s ease-in-out infinite;
+
+}
+
+@keyframes heroFloat{
+
+0%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-8px);
+}
+
+100%{
+transform:translateY(0);
+}
+
+}
+
+/* Gold Accent Glow */
+
+.emph{
+
+  text-shadow:
+  0 0 15px rgba(184,116,42,.2);
+
+}

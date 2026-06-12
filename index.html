@@ -95,6 +95,37 @@
       </div>
     </div>
   </section>
+  
+
+<!-- Stats Section Start -->
+
+<section class="stats-section reveal">
+
+  <div class="stat">
+    <h2 class="counter" data-target="22">0</h2>
+    <p>Business Verticals</p>
+  </div>
+
+  <div class="stat">
+    <h2 class="counter" data-target="2">0</h2>
+    <p>Countries</p>
+  </div>
+
+  <div class="stat">
+    <h2 class="counter" data-target="3">0</h2>
+    <p>Technology Platforms</p>
+  </div>
+
+  <div class="stat">
+    <h2 class="counter" data-target="24">0</h2>
+    <p>Support Availability</p>
+  </div>
+
+</section>
+
+<!-- Stats Section End -->
+
+
 
   <!-- FACTS STRIP -->
   <section class="facts reveal">
@@ -440,6 +471,43 @@ opacity:{
 value:0.4
 }
 }
+});
+
+/* Counter Animation */
+
+const counters =
+document.querySelectorAll(".counter");
+
+counters.forEach(counter => {
+
+const updateCounter = () => {
+
+const target =
++counter.getAttribute("data-target");
+
+const count =
++counter.innerText;
+
+const increment =
+target / 100;
+
+if(count < target){
+
+counter.innerText =
+Math.ceil(count + increment);
+
+setTimeout(updateCounter,20);
+
+}else{
+
+counter.innerText = target;
+
+}
+
+};
+
+updateCounter();
+
 });
 
 </script>

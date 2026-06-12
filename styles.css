@@ -208,16 +208,20 @@ em, .italic {
    Header / Nav
    ------------------------------------------------------------ */
 
-.site-header {
-  position: sticky;
-  top: 0;
-  z-index: 50;
-  background: rgba(243, 237, 225, 0.88);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border-bottom: 1px solid rgba(26, 22, 19, 0.08);
-}
+.site-header{
+  position:sticky;
+  top:0;
+  z-index:50;
 
+  background:rgba(243,237,225,.75);
+
+  backdrop-filter:blur(20px);
+  -webkit-backdrop-filter:blur(20px);
+
+  border-bottom:1px solid rgba(255,255,255,.15);
+
+  transition:all .4s ease;
+}
 .nav {
   display: flex;
   align-items: center;
@@ -404,10 +408,28 @@ em, .italic {
   letter-spacing: 0.12em;
 }
 
-.hero-meta span {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
+.hero-meta span{
+  animation:metaFloat 4s ease-in-out infinite;
+}
+
+.hero-meta span:nth-child(2){
+  animation-delay:1s;
+}
+
+.hero-meta span:nth-child(3){
+  animation-delay:2s;
+}
+
+@keyframes metaFloat{
+
+0%,100%{
+transform:translateY(0);
+}
+
+50%{
+transform:translateY(-6px);
+}
+
 }
 
 .hero-meta span::before {
@@ -1436,13 +1458,9 @@ em, .italic {
 
 /* Hero floating effect */
 
-.hero{
-
-  animation:
-  heroFloat 8s ease-in-out infinite;
-
+.hero-grid{
+  animation: heroFloat 8s ease-in-out infinite;
 }
-
 @keyframes heroFloat{
 
 0%{
@@ -1465,5 +1483,132 @@ transform:translateY(0);
 
   text-shadow:
   0 0 15px rgba(184,116,42,.2);
+
+}
+.orb{
+position:fixed;
+border-radius:50%;
+filter:blur(80px);
+z-index:-2;
+animation:floatOrb 12s ease-in-out infinite;
+}
+
+.orb-1{
+width:300px;
+height:300px;
+background:rgba(184,116,42,.12);
+top:10%;
+left:5%;
+}
+
+.orb-2{
+width:250px;
+height:250px;
+background:rgba(212,168,118,.08);
+right:10%;
+top:20%;
+animation-delay:2s;
+}
+
+.orb-3{
+width:350px;
+height:350px;
+background:rgba(107,115,83,.08);
+bottom:10%;
+left:40%;
+animation-delay:4s;
+}
+
+@keyframes floatOrb{
+0%{transform:translateY(0);}
+50%{transform:translateY(-40px);}
+100%{transform:translateY(0);}
+}
+.capability{
+  overflow:hidden;
+}
+
+.capability::before{
+
+content:"";
+
+position:absolute;
+
+top:-100%;
+left:-100%;
+
+width:200%;
+height:200%;
+
+background:
+linear-gradient(
+45deg,
+transparent,
+rgba(184,116,42,.08),
+transparent
+);
+
+transition:1s;
+
+pointer-events:none;
+
+}
+
+.capability:hover::before{
+
+top:0;
+left:0;
+
+}
+.cta-banner{
+position:relative;
+overflow:hidden;
+}
+
+.cta-banner::before{
+
+content:"";
+
+position:absolute;
+
+width:600px;
+height:600px;
+
+background:
+radial-gradient(
+circle,
+rgba(212,168,118,.12),
+transparent 70%
+);
+
+top:-300px;
+right:-250px;
+
+animation:
+ctaGlow 12s linear infinite;
+
+}
+
+@keyframes ctaGlow{
+
+0%{
+transform:rotate(0deg);
+}
+
+100%{
+transform:rotate(360deg);
+}
+
+}
+.markets-list li{
+transition:all .3s ease;
+}
+
+.markets-list li:hover{
+
+padding-left:15px;
+
+background:
+rgba(255,255,255,.02);
 
 }

@@ -2075,3 +2075,194 @@ transform:
 translateY(-2px);
 
 }
+/* ==========================================================
+   PLATFORM ARCHITECTURE
+========================================================== */
+
+.platform-architecture{
+
+margin-top:5rem;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+position:relative;
+
+}
+
+/* Main Platform Card */
+
+.main-card{
+
+width:420px;
+
+max-width:100%;
+
+text-align:center;
+
+background:#fff;
+
+padding:2rem;
+
+border-radius:24px;
+
+border:1px solid rgba(184,116,42,.15);
+
+box-shadow:
+0 15px 40px rgba(0,0,0,.08);
+
+transition:.4s ease;
+
+position:relative;
+
+z-index:2;
+
+}
+
+/* Vertical Line */
+
+.platform-line{
+
+width:3px;
+
+height:80px;
+
+background:linear-gradient(
+to bottom,
+var(--accent),
+transparent
+);
+
+margin:20px 0;
+
+}
+
+/* Bottom Cards */
+
+.platform-grid{
+
+display:grid;
+
+grid-template-columns:
+repeat(3,1fr);
+
+gap:2rem;
+
+width:100%;
+
+}
+
+/* Platform Cards */
+
+.platform-card{
+
+background:#fff;
+
+padding:2rem;
+
+border-radius:20px;
+
+border:1px solid rgba(184,116,42,.12);
+
+box-shadow:
+0 10px 30px rgba(0,0,0,.06);
+
+transition:
+transform .35s ease,
+box-shadow .35s ease;
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+/* Hover */
+
+.platform-card:hover{
+
+transform:
+translateY(-10px);
+
+box-shadow:
+0 20px 45px rgba(0,0,0,.12);
+
+}
+
+/* Light Sweep */
+
+.platform-card::before{
+
+content:"";
+
+position:absolute;
+
+top:-100%;
+left:-100%;
+
+width:200%;
+height:200%;
+
+background:
+linear-gradient(
+45deg,
+transparent,
+rgba(255,255,255,.22),
+transparent
+);
+
+transition:1s;
+
+pointer-events:none;
+
+}
+
+.platform-card:hover::before{
+
+top:0;
+left:0;
+
+}
+
+/* Titles */
+
+.platform-card h3{
+
+margin-bottom:1rem;
+
+color:var(--accent);
+
+}
+
+/* Description */
+
+.platform-card p{
+
+font-size:.95rem;
+
+line-height:1.7;
+
+color:var(--ink-soft);
+
+}
+
+/* Mobile */
+
+@media(max-width:900px){
+
+.platform-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.main-card{
+
+width:100%;
+
+}
+
+}

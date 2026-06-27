@@ -1627,3 +1627,451 @@ padding:2rem;
 background:rgba(255,255,255,.3);
 border-radius:20px;
 }
+/* ===========================================================
+   ELARARISE PREMIUM AI ANIMATIONS V2
+   Add BELOW your existing CSS
+   =========================================================== */
+
+
+/* ===============================
+   Hero Light Sweep
+   =============================== */
+
+.hero{
+    overflow:hidden;
+    position:relative;
+}
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-120%;
+
+width:45%;
+height:100%;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.22),
+transparent
+);
+
+transform:skewX(-25deg);
+
+animation:heroSweep 8s ease-in-out infinite;
+
+pointer-events:none;
+
+}
+
+@keyframes heroSweep{
+
+0%{
+left:-120%;
+}
+
+45%{
+left:140%;
+}
+
+100%{
+left:140%;
+}
+
+}
+
+
+/* ===============================
+   Premium Navigation
+   =============================== */
+
+.nav-links a{
+
+transition:
+all .35s ease;
+
+}
+
+.nav-links a:hover{
+
+transform:
+translateY(-2px);
+
+text-shadow:
+0 0 15px rgba(184,116,42,.35);
+
+}
+
+
+/* ===============================
+   Button Shine Effect
+   =============================== */
+
+.btn{
+
+position:relative;
+overflow:hidden;
+
+}
+
+.btn::before{
+
+content:"";
+
+position:absolute;
+
+top:0;
+left:-120%;
+
+width:60%;
+height:100%;
+
+background:
+linear-gradient(
+90deg,
+transparent,
+rgba(255,255,255,.35),
+transparent
+);
+
+transform:skewX(-20deg);
+
+transition:1s;
+
+}
+
+.btn:hover::before{
+
+left:180%;
+
+}
+
+
+/* ===============================
+   Hero Heading Glow
+   =============================== */
+
+.hero h1{
+
+animation:
+heroGlow 6s ease-in-out infinite;
+
+}
+
+@keyframes heroGlow{
+
+0%,100%{
+
+text-shadow:none;
+
+}
+
+50%{
+
+text-shadow:
+0 0 25px rgba(184,116,42,.15);
+
+}
+
+}
+
+
+/* ===============================
+   Stats Card Glow
+   =============================== */
+
+.stat{
+
+position:relative;
+overflow:hidden;
+
+}
+
+.stat::before{
+
+content:"";
+
+position:absolute;
+
+top:-100%;
+left:-100%;
+
+width:200%;
+height:200%;
+
+background:
+linear-gradient(
+45deg,
+transparent,
+rgba(255,255,255,.12),
+transparent
+);
+
+transition:1s;
+
+pointer-events:none;
+
+}
+
+.stat:hover::before{
+
+top:0;
+left:0;
+
+}
+
+
+/* ===============================
+   Counter Animation Glow
+   =============================== */
+
+.counter{
+
+display:inline-block;
+
+animation:
+counterPulse 4s ease infinite;
+
+}
+
+@keyframes counterPulse{
+
+0%,100%{
+
+transform:scale(1);
+
+}
+
+50%{
+
+transform:scale(1.08);
+
+}
+
+}
+
+
+/* ===============================
+   Facts Strip Hover
+   =============================== */
+
+.fact{
+
+cursor:default;
+
+transition:
+all .35s ease;
+
+}
+
+.fact:hover{
+
+transform:
+translateY(-8px);
+
+background:
+rgba(255,255,255,.15);
+
+backdrop-filter:
+blur(8px);
+
+border-radius:14px;
+
+}
+
+
+/* ===============================
+   Product Blocks
+   =============================== */
+
+.product-block{
+
+transition:
+transform .5s ease;
+
+}
+
+.product-block:hover{
+
+transform:
+translateY(-8px);
+
+}
+
+
+/* ===============================
+   Footer Animation
+   =============================== */
+
+.footer-col ul li{
+
+transition:
+transform .3s ease;
+
+}
+
+.footer-col ul li:hover{
+
+transform:
+translateX(8px);
+
+}
+
+
+/* ===============================
+   Floating Vertical Tags
+   =============================== */
+
+.vertical-tag{
+
+animation:
+tagFloat 6s ease-in-out infinite;
+
+}
+
+.vertical-tag:nth-child(even){
+
+animation-delay:1.5s;
+
+}
+
+.vertical-tag:nth-child(3n){
+
+animation-delay:3s;
+
+}
+
+@keyframes tagFloat{
+
+0%,100%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-5px);
+
+}
+
+}
+
+
+/* ===============================
+   Image Hover Zoom
+   =============================== */
+
+img{
+
+transition:
+transform .6s ease;
+
+}
+
+img:hover{
+
+transform:scale(1.03);
+
+}
+
+
+/* ===============================
+   Divider Draw Animation
+   =============================== */
+
+.divider{
+
+transform-origin:left;
+
+animation:
+dividerGrow 2s ease;
+
+}
+
+@keyframes dividerGrow{
+
+0%{
+
+transform:scaleX(0);
+
+}
+
+100%{
+
+transform:scaleX(1);
+
+}
+
+}
+
+
+/* ===============================
+   Office Cards
+   =============================== */
+
+.office{
+
+position:relative;
+
+overflow:hidden;
+
+}
+
+.office::after{
+
+content:"";
+
+position:absolute;
+
+bottom:0;
+left:0;
+
+width:100%;
+height:2px;
+
+background:
+linear-gradient(
+90deg,
+var(--accent),
+transparent
+);
+
+transform:scaleX(0);
+
+transform-origin:left;
+
+transition:.6s;
+
+}
+
+.office:hover::after{
+
+transform:scaleX(1);
+
+}
+
+
+/* ===============================
+   Smooth Section Fade
+   =============================== */
+
+.section{
+
+transition:
+transform .6s ease;
+
+}
+
+.section:hover{
+
+transform:
+translateY(-2px);
+
+}

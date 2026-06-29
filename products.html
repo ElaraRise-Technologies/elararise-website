@@ -12,6 +12,11 @@
   <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
   <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180x180.png" />
   <meta name="theme-color" content="#F3EDE1" />
+  
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 </head>
 <body>
 
@@ -53,7 +58,7 @@
 
   <!-- PRODUCT 1: VISION AI -->
   <section class="section container">
-    <div class="product-block">
+    <div class="product-block" data-aos="fade-up">
       <div class="product-head">
         <span class="mono">Product 01</span>
         <h3>Vision AI</h3>
@@ -83,7 +88,7 @@
           container, released only under authorised investigation workflows.
         </p>
 
-        <ul>
+        <ul data-aos="fade-up" data-aos-delay="100">
           <li>
             <span>Edge device</span>
             <span>NVIDIA Jetson Orin Nano, 8GB, installed per site</span>
@@ -117,7 +122,7 @@
     </div>
 
     <!-- PRODUCT 2: WHATSAPP COMMERCE -->
-    <div class="product-block">
+    <div class="product-block" data-aos="fade-up" data-aos-delay="100">
       <div class="product-head">
         <span class="mono">Product 02</span>
         <h3>WhatsApp Commerce</h3>
@@ -147,7 +152,7 @@
           between what was ordered, what was prepared, and what was collected.
         </p>
 
-        <ul>
+        <ul data-aos="fade-up" data-aos-delay="100">
           <li>
             <span>Channel</span>
             <span>WhatsApp Business API &middot; Meta Cloud API</span>
@@ -173,7 +178,7 @@
     </div>
 
     <!-- PRODUCT 3: VERTICAL PLATFORMS -->
-    <div class="product-block">
+    <div class="product-block" data-aos="fade-up" data-aos-delay="200">
       <div class="product-head">
         <span class="mono">Product 03</span>
         <h3>Vertical Intelligence</h3>
@@ -198,7 +203,7 @@
           rebuild.
         </p>
 
-        <div class="verticals">
+        <div class="verticals" data-aos="fade-up" data-aos-delay="100">
           <span class="vertical-tag">Quick-Service Restaurants</span>
           <span class="vertical-tag">Warehouse</span>
           <span class="vertical-tag">Workforce</span>
@@ -233,7 +238,7 @@
   </section>
 
   <!-- ARCHITECTURE -->
-  <section class="markets">
+  <section class="markets" data-aos="fade-up">
     <div class="container">
       <div class="markets-grid">
         <div>
@@ -246,22 +251,22 @@
         </div>
 
         <ul class="markets-list">
-          <li>
+          <li data-aos="fade-left" data-aos-delay="0">
             <span class="idx">L1</span>
             <span class="country">Edge &mdash; Jetson, ONNX, camera pipeline</span>
             <span class="status active">Active</span>
           </li>
-          <li>
+          <li data-aos="fade-left" data-aos-delay="100">
             <span class="idx">L2</span>
             <span class="country">Cloud Infrastructure &mdash; Azure IoT, Functions, SQL</span>
             <span class="status active">Active</span>
           </li>
-          <li>
+          <li data-aos="fade-left" data-aos-delay="200">
             <span class="idx">L3</span>
             <span class="country">Application Framework &mdash; ABP Commercial, .NET 8</span>
             <span class="status active">Active</span>
           </li>
-          <li>
+          <li data-aos="fade-left" data-aos-delay="300">
             <span class="idx">L4</span>
             <span class="country">AI &amp; Analytics &mdash; model-abstracted, interface-first</span>
             <span class="status active">Active</span>
@@ -273,13 +278,13 @@
 
   <!-- SECURITY & COMPLIANCE -->
   <section class="section container">
-    <div class="section-head">
+    <div class="section-head" data-aos="fade-up">
       <span class="eyebrow">Security &amp; Privacy</span>
       <h2>Operator data is operator data. We protect it accordingly.</h2>
     </div>
 
     <div class="approach-list">
-      <div class="approach-item">
+      <div class="approach-item" data-aos="fade-up" data-aos-delay="0">
         <span class="num">S1</span>
         <h3>Edge-first privacy.</h3>
         <p>
@@ -290,7 +295,7 @@
         </p>
       </div>
 
-      <div class="approach-item">
+      <div class="approach-item" data-aos="fade-up" data-aos-delay="100">
         <span class="num">S2</span>
         <h3>Encryption everywhere.</h3>
         <p>
@@ -301,7 +306,7 @@
         </p>
       </div>
 
-      <div class="approach-item">
+      <div class="approach-item" data-aos="fade-up" data-aos-delay="200">
         <span class="num">S3</span>
         <h3>Audit-grade AI.</h3>
         <p>
@@ -312,7 +317,7 @@
         </p>
       </div>
 
-      <div class="approach-item">
+      <div class="approach-item" data-aos="fade-up" data-aos-delay="300">
         <span class="num">S4</span>
         <h3>Tenant isolation by design.</h3>
         <p>
@@ -322,7 +327,7 @@
         </p>
       </div>
 
-      <div class="approach-item">
+      <div class="approach-item" data-aos="fade-up" data-aos-delay="400">
         <span class="num">S5</span>
         <h3>Regulatory readiness.</h3>
         <p>
@@ -336,7 +341,7 @@
   </section>
 
   <!-- CTA -->
-  <section class="cta-banner">
+  <section class="cta-banner" data-aos="fade-up">
     <div class="container">
       <h2>Want to see the <em>platform</em> in action?</h2>
       <p>
@@ -425,6 +430,45 @@
     </div>
   </div>
 </footer>
+
+<script>
+gsap.registerPlugin(ScrollTrigger);
+
+AOS.init({
+  duration: 1000,
+  once: true,
+  easing: 'ease-out-cubic'
+});
+
+// Hero entrance
+gsap.from(".hero h1", {
+  y: 50,
+  opacity: 0,
+  duration: 1,
+  ease: "power3.out",
+  delay: 0.2
+});
+
+gsap.from(".hero .lead", {
+  y: 30,
+  opacity: 0,
+  duration: 0.8,
+  ease: "power3.out",
+  delay: 0.5
+});
+
+// Stagger vertical tags on scroll
+ScrollTrigger.batch(".vertical-tag", {
+  onEnter: batch => gsap.from(batch, {
+    opacity: 0,
+    y: 20,
+    stagger: 0.05,
+    duration: 0.6,
+    ease: "power2.out"
+  }),
+  once: true
+});
+</script>
 
 </body>
 </html>
